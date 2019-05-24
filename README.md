@@ -1,2 +1,2 @@
 # FloatingView
-Gif/1.gif
+![image](https://raw.githubusercontent.com/yunjieyj/FloatingView/master/Gif/1.gif)
