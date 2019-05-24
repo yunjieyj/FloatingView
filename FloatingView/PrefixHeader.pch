@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  FloatingView
+//
+//  Created by syj on 2019/5/24.
+//  Copyright © 2019 syj. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "SYJConstantMgr.h"
+#import "UIView+Layout.h"
+
+#endif /* PrefixHeader_pch */

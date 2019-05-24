@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Music_VoiceInteractionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWZ-JQ-wZR">
+                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="i4G-J2-Qpg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGt-Wj-yCy">
+                    <rect key="frame" x="0.0" y="417" width="375" height="250"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQ0-ea-sQR">
+                            <rect key="frame" x="163.5" y="5" width="48" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Qad-uy-I62"/>
+                                <constraint firstAttribute="width" constant="48" id="m2Y-Pm-3mq"/>
+                            </constraints>
+                            <state key="normal" title="↓">
+                                <color key="titleColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你可以这样说" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXb-4Q-grD">
+                            <rect key="frame" x="129" y="37" width="117" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“声音大一点”" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-0V-qca">
+                            <rect key="frame" x="136" y="104.5" width="103" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ece-fe-B2f" customClass="RecordSoundWaveAnimationView">
+                            <rect key="frame" x="37.5" y="175" width="300" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="R6j-sL-psI"/>
+                                <constraint firstAttribute="width" constant="300" id="tKB-lD-6SO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ydh-0V-qca" firstAttribute="centerY" secondItem="nGt-Wj-yCy" secondAttribute="centerY" multiplier="0.92" id="03I-9X-WHh"/>
+                        <constraint firstItem="kQ0-ea-sQR" firstAttribute="centerX" secondItem="nGt-Wj-yCy" secondAttribute="centerX" id="07L-js-eg8"/>
+                        <constraint firstAttribute="height" constant="250" id="OYK-xR-dpY"/>
+                        <constraint firstItem="ydh-0V-qca" firstAttribute="centerX" secondItem="nGt-Wj-yCy" secondAttribute="centerX" id="PZO-5Y-GNl"/>
+                        <constraint firstAttribute="bottom" secondItem="Ece-fe-B2f" secondAttribute="bottom" constant="15" id="Qtw-sh-Iip"/>
+                        <constraint firstItem="kQ0-ea-sQR" firstAttribute="top" secondItem="nGt-Wj-yCy" secondAttribute="top" constant="5" id="UUZ-Wp-i3q"/>
+                        <constraint firstItem="Ece-fe-B2f" firstAttribute="centerX" secondItem="nGt-Wj-yCy" secondAttribute="centerX" id="psz-8v-khj"/>
+                        <constraint firstItem="qXb-4Q-grD" firstAttribute="centerX" secondItem="nGt-Wj-yCy" secondAttribute="centerX" id="tFI-fF-syx"/>
+                        <constraint firstItem="qXb-4Q-grD" firstAttribute="top" secondItem="kQ0-ea-sQR" secondAttribute="bottom" constant="2" id="yXc-Sl-W0r"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39586900679999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sWZ-JQ-wZR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="1Va-YN-CBv"/>
+                <constraint firstItem="nGt-Wj-yCy" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Jd3-Zy-8YR"/>
+                <constraint firstAttribute="bottom" secondItem="sWZ-JQ-wZR" secondAttribute="bottom" id="Rf5-sD-h3s"/>
+                <constraint firstItem="sWZ-JQ-wZR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VCB-me-sla"/>
+                <constraint firstItem="nGt-Wj-yCy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bmg-NZ-9qq"/>
+                <constraint firstItem="nGt-Wj-yCy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="rft-gJ-Lqo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomView1" destination="sWZ-JQ-wZR" id="Neg-UE-VvX"/>
+                <outlet property="bottomView2" destination="nGt-Wj-yCy" id="DgV-Ye-xYT"/>
+                <outlet property="bottomViewConstraint1" destination="Rf5-sD-h3s" id="fXg-ez-CCO"/>
+                <outlet property="bottomViewConstraint2" destination="Jd3-Zy-8YR" id="rTo-c8-7TL"/>
+                <outlet property="soundWaveAnimationView" destination="Ece-fe-B2f" id="GqP-7F-7dd"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="119.1904047976012"/>
+        </view>
+    </objects>
+</document>
